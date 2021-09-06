@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
+    background-color: var(--violet);
+    padding: 5%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* LOGO */
+
+.logo {
+    width: 20rem;
+    margin-bottom: 3%;
+}
+
+/* CONTENT */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.showcase {
+    width: 80%;
+}
+
+.content {
+    color: #fff;
+    align-self: stretch;
+    padding-left: 2rem;
+    margin-left: 2rem;
+}
+
+.content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 4.5rem;
+}
+
+.content P {
+    line-height: 1.8rem;
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    padding-right: 10rem;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    color: var(--violet);
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 25%;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.651);
+}
+
+.btn:hover {
+    background-color: var(--soft-magenta);
+    transition: 0.3s;
+}
+
+/* CONTACT */
+
+.contact {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact i {
+    color: #fff;
+    padding: 1rem;
+}
+
+.contact i:hover {
+    color: var(--soft-magenta);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+    margin: 2rem;
+}
+.attribution a {
+    color: #fff;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+    body {
+        background: url(../images/bg-mobile.svg) center center no-repeat;
+        background-size: cover;
+        background-color: var(--violet);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        width: 10rem;
+        align-self: start;
+        margin: 1rem 2rem;
+    }
+
+    .content {
+        padding: 1rem;
+        margin: 2rem 1rem;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .content p {
+        padding-right: 1rem;
+        width: 100%;
+    }
+
+    .btn {
+        margin: 0 auto;
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .contact {
+        justify-content: center;
+        align-items: center;
+    }
+}
